@@ -16,5 +16,15 @@
         android:id="@+id/verifyDetailsFragment2"
         android:name="com.makaota.navdemo.VerifyDetailsFragment"
         android:label="fragment_verify_details"
-        tools:layout="@layout/fragment_verify_details" />
+        tools:layout="@layout/fragment_verify_details" >
+
+        <argument android:name="name"
+            app:argType="string"
+            android:defaultValue='""'/>
+
+        <argument android:name="mobile"
+            app:argType="long"
+            android:defaultValue="0L"/>
+
+    </fragment>
 </navigation>
