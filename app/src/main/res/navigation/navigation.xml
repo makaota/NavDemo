@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/enterDetailsFragment4">
+    <fragment
+        android:id="@+id/enterDetailsFragment4"
+        android:name="com.makaota.navdemo.EnterDetailsFragment"
+        android:label="EnterDetailsFragment" >
+        <action
+            android:id="@+id/action_enterDetailsFragment4_to_verifyDetailsFragment2"
+            app:destination="@id/verifyDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyDetailsFragment2"
+        android:name="com.makaota.navdemo.VerifyDetailsFragment"
+        android:label="fragment_verify_details"
+        tools:layout="@layout/fragment_verify_details" />
+</navigation>
